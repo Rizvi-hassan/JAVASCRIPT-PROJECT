@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    background-repeat: no-repeat;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.container{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 2px 0px 10px #2424249c;
+    width: 90%;
+    max-width: 760px;
+    margin: 50px auto;
+    padding: 50px 30px;
+
+    & h1 {
+        text-align: center;
+        font-weight: bold;
+        color: #0d47a1;
+        margin-bottom: 20px;
+    }
+
+    & form > div {
+        width: 100%;
+
+        & label {
+            font-weight: bold;
+            font-size: 0.8em;
+            display: block;
+            padding-top: 8px;
+            color: #0d47a1;
+        }
+
+        
+    }
+
+    & form > div > input,
+    form > div > textarea {
+        padding: 6px 15px;
+        background-color: #f3f4f6;
+        border: 1px solid #3498db;
+        border-radius: 4px;
+        outline: none;
+        width: 100%;
+
+        &:focus {
+            border: 1px solid #ff5722;
+        }
+    }
+    
+    & form > input[type="submit"] {
+        background: linear-gradient(to right, #ff6b00, #ff5722) ;
+        padding: 8px 16px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+
+}
+
+#dialog-box {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 300px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.312);
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgb(74, 129, 199), rgb(103, 65, 103));
+    
+    padding: 25px;
+    text-align: center;
+    color: white;
+
+    & button {
+        font-weight: bold;
+        padding: 8px 25px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        color: white;
+        background: linear-gradient(to right, #ff6b00, #ff5722);
+        margin-top: 20px;
+    }
+}
+
+#invitation-container {
+    display: none;
+
+    & div {
+        width: 90%;
+        max-width: 550px;
+        border: 3px solid #ff5722;
+        padding: 20px;
+        border-radius: 15px;
+        margin: auto;
+        text-align: center;
+        
+        & h1 {
+            color: #ff5722;
+        }
+
+        & p {
+            padding: 5px 0px;
+        }
+
+        & p:first-of-type {
+            font-style: italic;
+        }
+
+        & #invite-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        & #invite-date {
+            font-size: 0.8em;
+            color: #ff5722;
+            text-align: left;
+        }
+
+        & #invite-time, #invite-location, #invite-description {
+            text-align: left;
+        }
+    }
+
+}

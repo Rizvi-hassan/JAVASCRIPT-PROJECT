@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="form-container">
+        <h1>Create an Event Invite</h1>
+        <form action="#" name= "event-form">
+            <div>
+                <label for="name">Event Name</label>
+                <input type="text" id="name" name="name" placeholder="Kerala JS Meetup">
+            </div>
+            <div>
+                <label for="date">Event Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <label for="start-time">Start Time</label>
+                <input type="time" id="start-time" name="start-time">
+            </div>
+            <div>
+                <label for="end-time">End Time</label>
+                <input type="time" id="end-time" name="end-time">
+            </div>
+            <div>
+                <label for="description">Event Description</label>
+                <textarea name="description" id="description" cols="30" rows="5" placeholder="Brief description of the event"></textarea>
+            </div>
+            <div>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location">
+            </div>
+            
+            <input type="submit" value="Create Event" name="submit">
+        </form>
+
+        <dialog id="dialog-box" > 
+            <p>Please fill in all fields</p>
+            <button id="dialog-close">Close</button>
+        </dialog>
+    </div>
+
+    <div class="container" id="invitation-container">
+        <div>
+            <h1>YOU ARE INVITED</h1>
+            <p>TO JOIN THE</p>
+
+            <p id="invite-name"></p>
+            <p id="invite-date"></p>
+            <p id="invite-time"></p>
+            <p id="invite-location"></p>
+            <p id="invite-description"></p>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
