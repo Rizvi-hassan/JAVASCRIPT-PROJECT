@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('https://ik.imagekit.io/d9mvewbju/BBA-NeetoSite-and-Project-Resources/password-generator-container_tarSlyutN.png?updatedAt=1730755103984');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.toast {
+    display: none;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #4CAF50;
+}
+
+.toast:first-of-type {
+    bottom: 70px;
+}
+
+.toast:last-of-type {
+    bottom: 20px;
+    background-color: #e74c3c;
+}
+
+.container, .information {
+    width: 60%;
+    min-width: 320px;
+    margin: 30px auto;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.151);
+
+    & h1 {
+        text-align: center;
+    }
+
+    & .inputBox {
+        background-color: #f4f4f4;
+        padding: 15px 25px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+
+        & input, button {
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+
+        & input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            width: 70%;
+            font-size: 1.5em;
+        }
+
+        & button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: #45a049;
+            }
+        }
+    }
+
+}
+
+.slider-section {
+
+    & p{
+        font-size: 0.9em;
+    }
+
+    & .slider-box {
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    & .check-boxes {
+        
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+        font-size: 0.9em;
+    }
+}
+
+.information {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 0px 15px;
+
+    & article {
+        width: 100%;
+        font-size: 0.9em;
+
+        & h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        & ul {
+            list-style-position: inside;
+        }
+
+    }
+    
+
+}

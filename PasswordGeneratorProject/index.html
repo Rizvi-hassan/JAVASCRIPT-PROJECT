@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Password Generator</h1>
+        <div class="inputBox">
+            <input type="text" value="" readonly id="display">
+            <button id="copy-password">Copy password</button>
+        </div>
+
+        <div class="slider-section">
+            <p>Use the slider, and select from the options below to lengthen your password and strenthen your security
+                <br> Password length (6-24)</p>
+
+            <div class="slider-box">
+                <label for="slide">Total Characters: </label>
+                <input type="range" id="slide" min="6" max="24" value="9">
+                <span id="slider-value">9</span>
+            </div>
+
+            <div class="check-boxes" id="checkBoxes">
+                <div>
+                    <input type="checkbox" id="numbers" checked>
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="letters" checked>
+                    <label for="letters">Include Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mixedCase" checked>
+                    <label for="mixedCase">Include Mixed Case</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="punctuation" checked>
+                    <label for="punctuation">Include Punctuation</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="information">
+
+        <article>
+            <h2>Do you use any of these weak passwords?</h2>
+            <ul>
+                <li>Password</li>
+                <li>123456</li>
+                <li>Qwerty</li>
+                <li>Your child`s name</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Why are those passwords weak?</h2>
+            <ul>
+                <li>They're easy to guess or crack.</li>
+                <li>If one of your logins is compromised, a hacker can access all your services.</li>
+            </ul>
+        </article>
+    </section>
+
+    <span class="toast" id="copied">Password copied to clipboard!</span>
+    <span class="toast" id="alertMsg">Please select at least one checkbox to generate a password</span>
+</body>
+<script src="script.js"></script>
+
+</html>
+
