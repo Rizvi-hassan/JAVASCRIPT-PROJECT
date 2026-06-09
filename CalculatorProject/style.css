@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: Helvetica, sans-serif;
+    background-color: #ecf0f1;
+    color: #2d2d2d;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    background-color: snow;
+    width: 30%;
+    min-width: 320px;
+    margin: 40px auto;
+    border-radius: 8px;
+    padding: 20px 10px;
+    box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.425);
+
+    & #display-text {
+        border: 2px solid rgb(185, 185, 185);
+        padding: 5px 15px;
+        text-align: right;
+        font-weight: bold;
+        color: #2d2d2d;
+        font-size: 1.5em;
+    }
+
+    & .buttons {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+
+    & .numbers,
+    .operations {
+        display: grid;
+        padding: 10px;
+        gap: 15px;
+        justify-content: center;
+        align-content: center;
+
+        /* border: 1px solid ; */
+
+        & button {
+            padding: 10px;
+            border: none;
+            /* background-color: rgb(238, 236, 236); */
+            border-radius: 8px;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.139);
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: scale 100ms ease-in-out;
+
+            &:hover {
+                scale: 1.07;
+            }
+
+            &:active {
+                scale: 0.92;
+            }
+        }
+
+    }
+
+    & .numbers {
+        width: 60%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    & .operations {
+        width: 40%;
+        grid-template-columns: 1fr 1fr;
+
+        & button {
+            background-color: palevioletred;
+            color: white;
+        }
+    }
+}
