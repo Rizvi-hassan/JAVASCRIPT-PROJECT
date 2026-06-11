@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1>To-Do List</h1>
+            <input type="text" placeholder="Search tasks" id="search-field">
+        </header>
+
+        <section id="new-task">
+            <form action="#" name="task-form">
+                <input type="text" placeholder="Add your to-do task..." name="task">
+                <input type="date" name="date">
+                <input type="time" name="time">
+                <input type="submit" value="Add Task" id="add-task">
+            </form>
+        </section>
+
+        <div id="main">
+            <section class="tasks" id="due-task-list">
+                <h2>Due Tasks</h2>
+                <!-- <article>
+                    <p class="date">16/10/2024</p>
+                    <p class="content">By groceries at <span class="time">05:00 PM</span></p>
+                </article> -->
+            </section>
+
+            <section class="tasks" id="upcoming-task-list">
+                <h2>Upcoming Tasks</h2>
+            </section>
+        </div>
+
+        <!-- edit task modal  -->
+        <dialog id="edit-modal">
+            <h2>Edit Task</h2>
+            <form action="#" name="edit-form">
+                <div>
+                    <input type="text" name="task-field">
+                    <input type="date" name="date-field">
+                    <input type="time" name="time-field">
+                </div>
+                <input type="submit" value="Edit task">
+                <input type="reset" value="Cancel" id="close-modal">
+            </form>
+        </dialog>
+
+        <dialog id="alert-modal">
+            <p>Please fill in all fields.</p>
+            <button id="alert-close-btn">OK</button>
+        </dialog>
+
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
